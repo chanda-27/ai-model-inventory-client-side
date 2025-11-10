@@ -14,3 +14,6 @@
     @apply btn bg-[--color-primary] text-black hover:bg-[--color-secondary];
   }
 }
+.active{
+  border:2px solid red
+}
