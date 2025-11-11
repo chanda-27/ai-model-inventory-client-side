@@ -1,9 +1,11 @@
 import React, { use } from 'react';
 import { Link, Navigate, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../../contexts/AuthContext';
+import Swal from 'sweetalert2';
 
 const Login = () => {
     const { logInUser } = use(AuthContext);
+
     const navigate = useNavigate();
     const location = useLocation();
     const handleLogIn = (e) => {
@@ -14,12 +16,21 @@ const Login = () => {
         const password = form.password.value;
         logInUser(email, password)
             .then(result => {
+                 Swal.fire({
+  position: "top-end",
+  icon: "success",
+  title: "You Login Successfully",
+  showConfirmButton: false,
+  timer: 1500
+});
+ 
+
                 console.log(result.user);
                 e.target.reset()
                 navigate(location.state || '/' )
                 
             }).catch(err => {
-            console.log(err.message);
+            Swal.fire(err.message);
             
         })
 }
