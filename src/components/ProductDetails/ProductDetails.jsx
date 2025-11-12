@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router";
 import useAxiosSecure from "./../../hooks/useAxiosSecure";
 import Swal from "sweetalert2";
-import { use, useEffect } from "react";
+import { use,  } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
 import { useState } from "react";
 import LoadingPage from "../../pages/LoadingPage/LoadingPage";

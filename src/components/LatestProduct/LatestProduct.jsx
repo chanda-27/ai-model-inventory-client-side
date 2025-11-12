@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router";
 
 const LatestProduct = ({ product }) => {
+  
+  
   return (
     <div>
       <div className="flex justify-center items-center">
@@ -31,12 +33,9 @@ const LatestProduct = ({ product }) => {
               </p>
               <p className="text-sm">
                 <span className="font-semibold">Category:</span>{" "}
-                {product.categories}
+                {product.category}
               </p>
-              <p className="text-sm">
-                <span className="font-semibold">Created</span>{" "}
-                {product.createdAt}
-              </p>
+             
               <p className="text-sm">
                 <span className="font-semibold">Availability:</span>{" "}
                 {product.availability}

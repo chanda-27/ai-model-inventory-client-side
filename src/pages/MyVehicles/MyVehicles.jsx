@@ -1,5 +1,5 @@
 
-import React, { useEffect, useRef, useState, useContext } from "react"; 
+import React, { useEffect,  useState, useContext } from "react"; 
 import useAxiosSecure from "./../../hooks/useAxiosSecure";
 import { AuthContext } from "../../contexts/AuthContext";
 import Swal from "sweetalert2";
@@ -8,18 +8,18 @@ import LoadingPage from "../LoadingPage/LoadingPage";
 import { Link } from "react-router";
 
 const MyVehicles = () => {
-    const updateProductModalRef = useRef(null);
-    const [updatingProductId, setUpdatingProductId] = useState(null);
+   
+    
     
     const axiosSecure = useAxiosSecure();
 
     const { user } = useContext(AuthContext); 
     const axiosInstance = useAxios();
     const [products, setProducts] = useState([]);
-    const [isLoading, setIsLoading] = useState(true); // Added loading state
+    const [isLoading, setIsLoading] = useState(true); 
 
    
-    const productToUpdate = products.find(p => p._id === updatingProductId);
+   
 
     
     useEffect(() => {
