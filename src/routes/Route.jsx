@@ -11,6 +11,7 @@ import PrivateRoute from "./PrivateRoute";
 import ProductDetails from "../components/ProductDetails/ProductDetails";
 import ErrorPage from "../pages/ErrorPage";
 import LoadingPage from "../pages/LoadingPage/LoadingPage";
+import UpdateProductDetails from "../components/UpdateProductDetails/UpdateProductDetails";
 
 const router = createBrowserRouter([
     {
@@ -50,6 +51,12 @@ const router = createBrowserRouter([
                 loader: ({ params }) => fetch(`http://localhost:3000/products/${params.id}`),
                 hydrateFallbackElement:<LoadingPage></LoadingPage>,
                 element: <PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>
+            },
+            {
+                path: '/updateDetails/:id',
+                loader: ({ params }) => fetch(`http://localhost:3000/products/${params.id}`),
+                hydrateFallbackElement:<LoadingPage></LoadingPage>,
+                element: <PrivateRoute><UpdateProductDetails></UpdateProductDetails></PrivateRoute>
             },
             {
                 path: '/*',
