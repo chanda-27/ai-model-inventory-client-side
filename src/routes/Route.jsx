@@ -9,6 +9,7 @@ import Register from "../pages/Register/Register";
 import Login from "../pages/Login/Login";
 import PrivateRoute from "./PrivateRoute";
 import ProductDetails from "../components/ProductDetails/ProductDetails";
+import ErrorPage from "../pages/ErrorPage";
 
 const router = createBrowserRouter([
     {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
                 hydrateFallbackElement:<p>loading ...</p>,
                 element: <PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>
             },
+            {
+                path: '/*',
+                element:<ErrorPage></ErrorPage>
+            }
         ]
         
     }
