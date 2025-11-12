@@ -1,5 +1,8 @@
-@import "tailwindcss";
+@import "tailwindcss"; 
 @plugin "daisyui";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @plugin "daisyui/theme" {
   name: "light";
@@ -7,10 +10,11 @@
   --color-primary: #03A6A1;
   --color-secondary: #70B2B2;
 }
+@plugin "daisyui" {
+  themes: all;
+}
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 @layer components {
   .btn-custom {
