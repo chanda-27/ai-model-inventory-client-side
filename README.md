@@ -1,65 +1,68 @@
-# ✈️ TravelEase – Vehicle Booking & Trip Management Platform
+# 🤖 AI Model Inventory Manager
 
-**Live Site URL:** [https://tripwise22.netlify.app/]
+### 🌐 Live Site: [https://ai-model-inventory-manager33.netlify.app/]
 
-## ✨ Project Features
+## 🧠 Why This Topic?
 
-TravelEase is a full-stack vehicle rental and trip management application built to simplify the process of listing and booking vehicles. It allows authenticated users to manage their own vehicle listings and view their bookings.
+The **AI Model Inventory Manager** is designed to help students explore the connection between **Web Development** and **Artificial Intelligence**.  
+In today’s world, AI is transforming industries — from research to production deployment.  
+This project lets students experience managing AI models like professionals do in real-world applications such as **Hugging Face**, **Kaggle**, and **Model Zoo**.  
 
-* **Seamless Authentication:** Secure user authentication using **Firebase** (Google Social Login and Email/Password), ensuring a safe and personalized experience.
-* **Comprehensive Vehicle Management:** Users can easily **Add**, **Update**, and **Delete** their own vehicle listings, with data securely stored in **MongoDB**.
-* **Personalized Dashboards:** Dedicated private routes for **"My Vehicles"** and **"My Bookings"**, displaying only the data relevant to the logged-in user.
-* **Advanced Filtering & Sorting:** The **"All Vehicles"** page includes robust features to filter and sort vehicles by **Category**, **Location**, and **Price** for a better search experience.
-* **Modern & Responsive UI:** Built with **React** and styled using **Tailwind CSS** to ensure a beautiful, consistent, and fully responsive design across all devices.
+It helps learners understand how AI models are **organized, stored, and tracked**, while learning important web development skills — **React.js**, **Node.js**, **Express.js**, and **MongoDB**.
 
 ---
 
-## 💻 Technology Stack
+## 💡 Motivation
 
-This project is a complete **MERN Stack** application, enhanced with modern libraries for authentication and utility:
+Creating this project encourages understanding of:
+- How AI models (like GPT, BERT, ResNet) are stored and retrieved.
+- How metadata (framework, dataset, use case) helps in managing AI models.
+- How CRUD operations work in real-world web apps.
 
-### Client-Side (Frontend)
-* **Framework:** React (Vite)
-* **Styling:** Tailwind CSS
-* **API Calls:** Axios / TanStack Query
-* **State Management/Hooks:** React Router DOM
-* **Authentication:** Firebase Authentication
-* **Animation/Utility:** `@react-spring/web` and `date-fns` (for date handling)
-* **Alerts:** `sweetalert2` (for custom, non-default alerts)
-
-### Server-Side (Backend)
-* **Runtime:** Node.js
-* **Framework:** Express.js
-* **Database:** MongoDB
-* **API Calls:** Axios
+Inspired by:
+- 🧠 **Hugging Face:** Managing AI models and datasets with detailed metadata.  
+- 🏆 **Kaggle:** Organizing AI models and competitions.  
+- 🧩 **Model Zoo:** Sharing pre-trained models for multiple frameworks.
 
 ---
 
-## 🚀 Deployment
+## 🎯 Project Theme
 
-| Component | Service | Notes |
-| :--- | :--- | :--- |
-| **Client-Side** (Frontend) | [Netlify / Surge / Firebase] | [Your Deployment Platform] |
-| **Server-Side** (Backend) | [Vercel / Other] | [Your Deployment Platform] |
+A **full-stack web application** that allows users to:
+- Add, view, update, and delete AI model entries.
+- Store metadata like **Model Name**, **Framework**, **Use Case**, **Dataset**, and **Description**.
+- Authenticate users using **Firebase**.
+- Manage data securely in **MongoDB**.
+- Enjoy responsive, modern UI with **Dark/Light theme toggle**.
 
 ---
 
-## ⚙️ Getting Started (Local Setup)
+## ⚙️ Key Features
 
-### Prerequisites
+- 🔐 **Authentication:**  
+  Firebase login with **Email/Password** and **Google Sign-In**.  
+  Private routes for registered users.
 
-* Node.js (v18+)
-* MongoDB Atlas Account
-* Firebase Project (for authentication keys)
+- 🧾 **CRUD Operations:**  
+  Users can Add, View, Edit, and Delete their own AI Models.
 
+- 📦 **Personal Dashboards:**  
+  - **My Models Page:** View models added by the user.  
+  - **My Purchases Page:** View models purchased by the user.
 
+- 💳 **Purchase Counter:**  
+  Increments real-time when a model is purchased.
 
-## 🖼️ UI/UX & Design Philosophy
+- 🔍 **Search & Filter:**  
+  - Search by **model name** using MongoDB `$regex`.  
+  - Filter by **framework** (TensorFlow, PyTorch, etc.).
 
-The design adheres strictly to modern UI principles:
+- 🌗 **Dark/Light Theme Toggle:**  
+  Theme persists across the whole site.
 
-* **Consistency:** Uniform styles for headings, fonts, buttons, and card elements across the entire application.
-* **Responsiveness:** Full mobile, tablet, and desktop responsiveness implemented with Tailwind CSS.
-* **Aesthetics:** A clean, spacious, and readable layout prioritizing user-friendliness.
-* **Branding:** Use of the new **X (formerly Twitter) logo** in social links to align with current branding standards.
-* **Theming:** Includes a **Dark/Light Theme Toggle** on the homepage for user preference.
+- ⚠️ **Custom Alerts:**  
+  SweetAlert2 used instead of default browser alerts.
+
+---
+
+## 🧩 Data Structure (MongoDB
