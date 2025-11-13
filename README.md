@@ -1,8 +1,8 @@
-# 🤖 AI Model Inventory Manager
+#  AI Model Inventory Manager
 
-### 🌐 Live Site: [https://ai-model-inventory-manager33.netlify.app/]
+###  Live Site: [https://ai-model-inventory-manager33.netlify.app/]
 
-## 🧠 Why This Topic?
+##  Why This Topic?
 
 The **AI Model Inventory Manager** is designed to help students explore the connection between **Web Development** and **Artificial Intelligence**.  
 In today’s world, AI is transforming industries — from research to production deployment.  
